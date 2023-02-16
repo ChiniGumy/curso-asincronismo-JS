@@ -1,0 +1,25 @@
+{
+  "name": "curso_asincronismo_con_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiniGumy/curso-asincronismo-JS.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "David Sanchez Romero dsebastiansr24@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChiniGumy/curso-asincronismo-JS/issues"
+  },
+  "homepage": "https://github.com/ChiniGumy/curso-asincronismo-JS#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
