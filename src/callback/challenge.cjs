@@ -1,5 +1,5 @@
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-const API = 'https://api.escuelajs.co/api/v1/';
+const API = 'https://api.escuelajs.co/api/v1';
 
 
 function fetchData(urlAPI, callback) {
@@ -27,9 +27,9 @@ function fetchData(urlAPI, callback) {
 fetchData(`${API}/products`, function (error1, data1) {
 
 	if (error1) return console.error(error1);
-
-	fetchData(`${API}/products/${data1[0].id}`, function(error2, data2){
 	
+	fetchData(`${API}/products/${data1[0].id}`, function(error2, data2){
+		
 		if (error2) return console.error(error2);
 	
 		fetchData(`${API}/products/${data2?.category?.id}`, function(error3, data3){

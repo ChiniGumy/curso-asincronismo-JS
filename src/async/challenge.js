@@ -12,12 +12,12 @@ const funcionYala = async (urlAPI) => {
 		const products = await fetchData(`${urlAPI}/products`);
 		const product = await fetchData(`${urlAPI}/products/${products[0].id}`);
 		const category = await fetchData(`${urlAPI}/categories/${product.category.id}`);
-
+		
 		console.log(products);
 		console.log(product.title);
 		console.log(category.name);
 
-	} catch {
+	} catch (error) {
 		console.error(error);
 	}
 }
